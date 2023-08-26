@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">ridho<span>yanualif</span></a>
+        <div class="navbar-nav">
+            <a href="#">Home</a>
+            <a href="#about">Tentang Saya</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Kontak</a>
+        </div>
+        <div class="navbar-extra">
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+
+<div class="profile">
+  <img src="hi bunderan.jpg" alt="hi">
+  <h1>ridhoyanualif</h1>
+  <p>ridho yanualif nugroho</p>
+</div>
+<div class="about">
+    <h1>About</h1>
+    <hr>
+</div>
+<div class="desc">
+    <div class="kiri">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, maiores vel. Sequi eius eligendi ducimus facere. Quo fugiat soluta numquam debitis quisquam nisi itaque id rem quia, eligendi possimus architecto.</p>
+    </div>
+    <hr class="tengah">
+    <div class="kanan">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint necessitatibus voluptas ut dicta ducimus in deleniti error pariatur quisquam, nulla maiores. Nihil consequatur voluptates aut sed excepturi quas officia voluptate?</p>
+    </div>
+</div>
+<hr class="gap">
+<div>
+    <div class="portofolio">
+        <h1>tofolio</h1>
+    </div>
+    <div>
+        <table class="tabel">
+            <tr>
+                <td>
+                    <a href=""><img class="satu" src="hi bunderan.jpg" alt=""></a>
+                </td>
+                <td>
+                    <a href=""><img class="satu" src="hi bunderan.jpg" alt=""></a>
+                </td>
+                <td>
+                    <a href=""><img class="satu" src="hi bunderan.jpg" alt=""></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href=""><img class="satu" src="hi bunderan.jpg" alt=""></a>
+                </td>
+                <td>
+                    <a href=""><img class="satu" src="hi bunderan.jpg" alt=""></a>
+                </td>
+                <td>
+                    <a href=""><img class="satu" src="hi bunderan.jpg" alt=""></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="desc3">
+    <h1 class="tester">Tester</h1>
+    <hr>
+    <input id="input" type="number" placeholder="masukan tahun lahir"/>
+    <button id="tombol-usia" onclick="hasil()">Cek Usia</button>
+    <hr>
+    <p id="result"></p>
+    <hr>
+</div>
+
+
+<script>
+function hasil(){
+    var masukan = document.getElementById("input");
+    var thnlahir = masukan.value;
+    // var thnlahir = ("input").value;
+    // var thnini = new Date().getFullYear();
+    var thnini = 2023;
+    var hitung = thnini - thnlahir;
+    alert(hitung);
+    result.innerHTML = "Usia saat ini " + hitung
+}
+function tombolenter(){
+    if (e.keyCode == 13)
+    {
+        document.getElementById('tombol-usia').click();
+    }
+}
+
+</script>
+
+
+<footer>
+    <p>&copy; 2023 | built by. <a href="http://instagram.com/ridhoyanualif">ridhoyanualif</a></p>
+</footer>
+    <script>
+        feather.replace()
+      </script>
+</body>
+</html>
